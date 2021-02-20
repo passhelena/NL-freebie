@@ -1,0 +1,88 @@
+
+
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+        
+        .navbar-nav a {
+            color: #ffffff;
+            font-size: 0.875rem;
+            font-weight: bold;
+            margin-right: 0.75rem;
+            margin-left: 0.75rem;
+        }
+        
+        .hero-bg {
+            background-repeat: no-repeat;
+            background-image: url(images/herophoto.jpg);
+            background-size: cover;
+            background-position: bottom center;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(180deg, #082120 0%, rgba(8, 33, 32, 0.796875) 56.96%, rgba(8, 33, 32, 0) 232.69%);
+        }
+        
+        .hero-text {
+            font-weight: bold;
+            text-align: left;
+            color: white;
+            padding-bottom: 20rem;
+        }
+        
+        .hero-text h3 {
+            color: #ffffffcc;
+            margin-top: 1.5rem;
+        }
+        
+        .join-mailing-list {
+            background-color: #082120;
+            border: 1px solid rgba(76, 192, 181, 0.5);
+            box-sizing: border-box;
+            margin-top: 1rem;
+            margin-bottom: 2.6rem;
+        }
+        
+        .join-mailing-list h3 {
+            text-align: center;
+            color: #4CC0B5;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        
+        .join-mailing-list h4 {
+            text-align: center;
+            color: #ffffff;
+            padding-top: 0.5rem;
+            padding-bottom: 2.5rem;
+        }
+        
+        .input-group {
+            background-color: #082120;
+            font-size: 1.125rem;
+            border: 1px solid rgba(76, 192, 181, 0.5);
+            padding-bottom: 2rem;
+        }
+        
+        .form-control {
+            background-color: #082120;
+            border: 1px solid rgba(76, 192, 181, 0.5);
+        }
+        
+        .btn-outline-secondary {
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #4CC0B5;
+        }
+        
+        .join-mailing-list h5 {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 2rem;
+            padding-bottom: 2.625rem;
+        }
+
