@@ -14,19 +14,22 @@
 
 .hero-bg {
     background-repeat: no-repeat;
-    background-image: url(images/herophoto.jpg);
+    background-image: url(images/herophoto.png);
     background-size: cover;
     background-position: bottom center;
 }
 
 .hero-overlay {
-    background: linear-gradient(180deg, #082120 0%, rgba(8, 33, 32, 0.796875) 56.96%, rgba(8, 33, 32, 0) 232.69%);
+    background: linear-gradient(1deg, rgb(8, 33, 32) 0%, rgba(8, 33, 32, 0.796) 56.96%, rgba(8, 33, 32, 0) 232.69%);
 }
 
+// (180deg, rgba(8, 33, 32, 1) 232.69%, rgba(8, 33, 32, 0.7969) 56.96%, rgba(8, 33, 32, 0.37) 0%);
+// (180deg, rgba(8, 33, 32, 0.37) 0%, rgba(8, 33, 32, 0.7969) 56.96%, rgba(8, 33, 32, 1) 232.69%);
 .hero-text {
     font-weight: bold;
     text-align: left;
     color: white;
+    margin-top: 13.8rem;
     padding-bottom: 20rem;
 }
 
@@ -40,7 +43,7 @@
     border: 1px solid rgba(76, 192, 181, 0.5);
     box-sizing: border-box;
     margin-top: 1rem;
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.5rem;
 }
 
 .join-mailing-list h3 {
@@ -58,21 +61,36 @@
 }
 
 .input-group {
-    background-color: #082120;
+    border-color: rgba(76, 192, 181, .5);
     font-size: 1.125rem;
-    border: 1px solid rgba(76, 192, 181, 0.5);
-    padding-bottom: 2rem;
+    color: #fff;
+    border-right-color: transparent;
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
 }
 
 .form-control {
     background-color: #082120;
     border: 1px solid rgba(76, 192, 181, 0.5);
+    color: #fff;
 }
 
 .btn-outline-secondary {
     font-weight: bold;
+    letter-spacing: 2px;
     text-transform: uppercase;
     background-color: #4CC0B5;
+    color: #fff;
+    border-radius: 2px;
 }
 
 .join-mailing-list h5 {
@@ -80,4 +98,34 @@
     color: rgba(255, 255, 255, 0.7);
     margin-top: 2rem;
     padding-bottom: 2.625rem;
+}
+
+.content-header {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 5rem;
+}
+
+.content {
+    padding-top: 8.5rem;
+}
+
+.content h3 {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #4CC0B5;
+    padding-bottom: 0.5rem;
+}
+
+.content h5 {
+    padding-top: 3.5rem;
+}
+
+.four-reasons {
+    text-align: center;
+}
+
+.four-reasons h3 {
+    padding-top: 9.25rem;
 }
