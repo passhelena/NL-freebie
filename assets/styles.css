@@ -10761,6 +10761,7 @@ textarea.form-control-lg {
   border-bottom-style: solid;
   border-bottom-color: #4CC0B5;
   padding-bottom: 0.5rem;
+  display: inline-block;
 }
 
 .content h5, .content .h5 {
@@ -10772,6 +10773,128 @@ textarea.form-control-lg {
 }
 
 .four-reasons h3, .four-reasons .h3 {
+  display: inline-block;
   padding-top: 9.25rem;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #4CC0B5;
+  padding-bottom: 0.5rem;
+}
+
+.four-reasons-cards {
+  padding-top: 8rem;
+  padding-bottom: 9.25rem;
+  border: 0px;
+}
+
+.card-text-center {
+  display: center;
+  border: 0px;
+}
+
+.card-icon-top {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.card-title {
+  font-weight: bold;
+  padding-bottom: 1.125rem;
+  padding-top: 3.125rem;
+}
+
+.card-text {
+  color: #666666;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  line-height: 1.7;
+}
+
+.taimne-teisip2ev-heading {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #4CC0B5;
+  padding-bottom: 0.5rem;
+}
+
+.taimne-teisip2ev-logo {
+  padding-top: 2rem;
+  padding-bottom: 4.25rem;
+  text-align: center;
+}
+
+.socialmedia-bg {
+  padding-top: 2.875rem;
+  background-repeat: no-repeat;
+  background-image: url(images/socialmediaphoto.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  display: block;
+}
+
+.socialmedia-text {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+.socialmedia-text h3, .socialmedia-text .h3 {
+  display: inline-block;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #4CC0B5;
+  padding-bottom: 0.5rem;
+}
+.socialmedia-text h4, .socialmedia-text .h4 {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+.socialmedia-text h5, .socialmedia-text .h5 {
+  padding-bottom: 3.5rem;
+  line-height: 1.7;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.social-media-cards {
+  padding-bottom: 5.75rem;
+}
+
+.page-footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-menu-item {
+  font-size: 0.75rem;
+  list-style: none;
+  color: #6D8684;
+}
+.footer-menu-item .nav-link {
+  color: #6D8684;
+}
+.footer-menu-item .footer-socialmedia-icon {
+  color: #6D8684;
+}
+
+.button {
+  background-color: transparent;
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 0.625rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #6D8684;
+}
+
+.contact-info {
+  padding-left: 50px;
+  align-items: left;
 }
 /*# sourceMappingURL=styles.css.map */
