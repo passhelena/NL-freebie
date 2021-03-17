@@ -10579,11 +10579,6 @@ textarea.form-control-lg {
   margin-top: 10rem;
 }
 
-.navbar {
-  padding-top: 50px;
-  position: relative;
-}
-
 .navbar-brand {
   width: 128px;
   height: 36px;
@@ -10633,15 +10628,6 @@ textarea.form-control-lg {
   display: inline-block;
 }
 
-#navbar2 {
-  background: rgba(255, 255, 255, 0.97);
-  background-size: cover;
-  width: 100%;
-}
-#navbar2 .navbar-nav a {
-  color: #000;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -10663,18 +10649,20 @@ textarea.form-control-lg {
 .hero-bg {
   background-repeat: no-repeat;
   background-image: url(images/herophoto.png);
+  height: 940px;
   background-size: cover;
   background-position: bottom center;
 }
 
 .hero-overlay {
-  background: linear-gradient(1deg, #082120 0%, rgba(8, 33, 32, 0.796) 56.96%, rgba(8, 33, 32, 0) 232.69%);
+  background: linear-gradient(1deg, #082120 0%, rgba(8, 33, 32, 0.796) 50%, rgba(8, 33, 32, 0) 200%);
+  height: 940px;
 }
 
 .hero-text {
   text-align: left;
   color: white;
-  margin-top: 13.8rem;
+  margin-top: 20.5rem;
   padding-bottom: 20rem;
 }
 .hero-text h1, .hero-text .h1 {
@@ -10782,6 +10770,14 @@ textarea.form-control-lg {
 }
 
 @media screen and (max-width: 600px) {
+  .hero-bg {
+    height: 640px;
+  }
+
+  .hero-overlay {
+    height: 640px;
+  }
+
   .hero-text {
     margin-top: 17rem;
     line-height: 5;
@@ -11003,6 +10999,18 @@ textarea.form-control-lg {
   background: url(images/fb_logo.svg);
 }
 
+.card-icon-top-sm-fb:hover {
+  background: url(images/socialmediaplus_hover_white.svg);
+  z-index: 999;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+}
+
 @keyframes zoom-in {
   /* You could think of as "step 1" */
   0% {
@@ -11221,5 +11229,30 @@ textarea.form-control-lg {
     font-size: 0.75;
     text-align: center;
   }
+}
+/* petsi sticky tricky */
+#menufix {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+#menufix {
+  transition: padding-top 0.5s, padding-bottom 0.5s, background-color 1s;
+}
+
+#menufix.stick {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.13);
+}
+#menufix.stick .navbar-nav a {
+  color: #000;
+}
+#menufix.stick .nav-link-button img {
+  content: url(images/toeta_button_sticky.svg);
+}
+#menufix.stick .navbar-brand img {
+  content: url(images/NL_uuslogo.svg);
 }
 /*# sourceMappingURL=styles.css.map */
