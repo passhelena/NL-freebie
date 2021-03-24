@@ -10864,14 +10864,21 @@ textarea.form-control-lg {
 }
 
 .content h3, .content .h3 {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: #4CC0B5;
   padding-bottom: 0.5rem;
-  display: inline-block;
   color: #000;
-  max-width: 27rem;
   line-height: 1.4;
+  position: relative;
+  display: inline-block;
+}
+
+.content h3::after, .content .h3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 2px solid #4CC0B5;
+  border-bottom-width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 .content h5, .content .h5 {
@@ -10908,6 +10915,7 @@ textarea.form-control-lg {
 
 .four-reasons h3, .four-reasons .h3 {
   display: inline-block;
+  line-height: 1.4;
   padding-top: 5rem;
   border-bottom-width: 2px;
   border-bottom-style: solid;
@@ -10976,6 +10984,7 @@ textarea.form-control-lg {
   }
 }
 .taimne-teisip2ev-heading {
+  line-height: 1.4;
   display: inline-block;
   align-items: center;
   text-align: center;
@@ -11029,24 +11038,54 @@ textarea.form-control-lg {
 }
 
 .card-icon-top-sm-fb {
-  display: inline-block;
   width: 6.25rem;
   height: 6.25rem;
-  background: transparent;
-  transition-property: width, height;
-  background: url(images/fb_logo.svg);
+  background: url(images/fb_logo.svg) no-repeat;
+  transition: 0.5s zoom-in;
 }
 
 .card-icon-top-sm-fb:hover {
-  background: url(images/socialmediaplus_hover_white.svg);
-  z-index: 999;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  object-fit: contain;
+  background: url(images/socialmediaplus_hover_white.svg) no-repeat;
+  background-position: center;
+}
+
+.card-icon-top-sm-tw {
+  width: 6.25rem;
+  height: 6.25rem;
+  transition-property: width, height;
+  background: url(images/twitter_logo.svg) no-repeat;
+  transition: 0.5s zoom-in;
+}
+
+.card-icon-top-sm-tw:hover {
+  background: url(images/socialmediaplus_hover_white.svg) no-repeat;
+  background-position: center;
+}
+
+.card-icon-top-sm-ig {
+  width: 6.25rem;
+  height: 6.25rem;
+  transition-property: width, height;
+  background: url(images/ig_logo.svg) no-repeat;
+  transition: 0.5s zoom-in;
+}
+
+.card-icon-top-sm-ig:hover {
+  background: url(images/socialmediaplus_hover_white.svg) no-repeat;
+  background-position: center;
+}
+
+.card-icon-top-sm-yt {
+  width: 6.25rem;
+  height: 6.25rem;
+  transition-property: width, height;
+  background: url(images/yt_icon.svg) no-repeat;
+  transition: 0.5s zoom-in;
+}
+
+.card-icon-top-sm-yt:hover {
+  background: url(images/socialmediaplus_hover_white.svg) no-repeat;
+  background-position: center;
 }
 
 .card {
@@ -11057,24 +11096,6 @@ textarea.form-control-lg {
   padding-bottom: 5.75rem;
 }
 
-.card-icon-top-sm-fb {
-  display: inline-block;
-  width: 6.25rem;
-  height: 6.25rem;
-  background: transparent;
-}
-
-@keyframes zoom-in {
-  /* You could think of as "step 1" */
-  0% {
-    width: 0px;
-    top: 0;
-  }
-  /* You could think of as "step 2" */
-  100% {
-    width: 45px;
-  }
-}
 @media only screen and (max-width: 600px) {
   .socialmedia-text h3, .socialmedia-text .h3 {
     padding-top: 1rem;
@@ -11301,6 +11322,35 @@ textarea.form-control-lg {
   content: url(images/NL_uuslogo.svg);
 }
 
+#menufix.burger {
+  transition: background-color 0s;
+  background-color: white;
+}
+#menufix.burger .navbar-brand img {
+  content: url(images/NL_uuslogo.svg);
+}
+#menufix.burger .navbar-dark .navbar-toggler-icon {
+  background-image: url(images/hamburger_close.svg);
+  width: 15px;
+  height: 15px;
+}
+#menufix.burger .nav-link-button img {
+  content: url(images/toeta_button_sticky.svg);
+}
+#menufix.burger .nav-link-button img:active {
+  content: url(images/toeta_button_hover.svg);
+}
+#menufix.burger .nav-link:active {
+  color: #4CC0B5;
+}
+#menufix.burger .nav-link::after {
+  transition: transform 500ms ease-in;
+  content: none;
+}
+#menufix.burger .nav-link:active::after {
+  transform: none;
+}
+
 @media screen and (max-width: 600px) {
   #menufix {
     padding-top: 1rem;
@@ -11322,6 +11372,9 @@ textarea.form-control-lg {
   }
   #menufix.stick .nav-link:active::after {
     transform: none;
+  }
+  #menufix.stick .nav-link-button img:active {
+    content: url(images/toeta_button_hover.svg);
   }
   #menufix.stick .navbar-toggler-icon {
     background-image: url(images/hamburger_menu_black.svg);
