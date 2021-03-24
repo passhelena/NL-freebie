@@ -292,13 +292,9 @@
     line-height: 1.4;
     position: relative;
     display: inline-block;
-    //border-bottom-width: 2px;
-    //border-bottom-style: solid;
-    //border-bottom-color: #4CC0B5;
     padding-bottom: 0.5rem;
-    //display: inline-block;
     color: #000;
-    //max-width: 27rem;
+    max-width: 27rem;
     line-height: 1.4;
 }
 
@@ -310,6 +306,7 @@
     border-bottom-width: 100%;
     bottom: 0;
     left: 0;
+    display: inline-block;
 }
 
 .content h5 {
@@ -346,7 +343,7 @@
 .four-reasons h3 {
     display: inline-block;
     line-height: 1.4;
-    padding-top: 5rem;
+    padding-top: 9.25rem;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #4CC0B5;
@@ -355,7 +352,7 @@
 
 .four-reasons-cards {
     $card-height: 100%;
-    padding-top: 8rem;
+    padding-top: 4rem;
     padding-bottom: 9.25rem;
     border: 0px;
 }

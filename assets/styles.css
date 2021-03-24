@@ -10871,6 +10871,7 @@ textarea.form-control-lg {
   display: inline-block;
   padding-bottom: 0.5rem;
   color: #000;
+  max-width: 27rem;
   line-height: 1.4;
 }
 
@@ -10882,6 +10883,7 @@ textarea.form-control-lg {
   border-bottom-width: 100%;
   bottom: 0;
   left: 0;
+  display: inline-block;
 }
 
 .content h5, .content .h5 {
@@ -10919,7 +10921,7 @@ textarea.form-control-lg {
 .four-reasons h3, .four-reasons .h3 {
   display: inline-block;
   line-height: 1.4;
-  padding-top: 5rem;
+  padding-top: 9.25rem;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #4CC0B5;
@@ -10927,7 +10929,7 @@ textarea.form-control-lg {
 }
 
 .four-reasons-cards {
-  padding-top: 8rem;
+  padding-top: 4rem;
   padding-bottom: 9.25rem;
   border: 0px;
 }
