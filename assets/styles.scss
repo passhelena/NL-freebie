@@ -292,6 +292,14 @@
     line-height: 1.4;
     position: relative;
     display: inline-block;
+    //border-bottom-width: 2px;
+    //border-bottom-style: solid;
+    //border-bottom-color: #4CC0B5;
+    padding-bottom: 0.5rem;
+    //display: inline-block;
+    color: #000;
+    //max-width: 27rem;
+    line-height: 1.4;
 }
 
 .content h3::after {
@@ -772,6 +780,9 @@
     }
     .nav-link:active::after {
         transform: none;
+    }
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url(images/hamburger_close.svg);
     }
 }
 

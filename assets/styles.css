@@ -10869,6 +10869,9 @@ textarea.form-control-lg {
   line-height: 1.4;
   position: relative;
   display: inline-block;
+  padding-bottom: 0.5rem;
+  color: #000;
+  line-height: 1.4;
 }
 
 .content h3::after, .content .h3::after {
@@ -11349,6 +11352,9 @@ textarea.form-control-lg {
 }
 #menufix.burger .nav-link:active::after {
   transform: none;
+}
+#menufix.burger .navbar-dark .navbar-toggler-icon {
+  background-image: url(images/hamburger_close.svg);
 }
 
 @media screen and (max-width: 600px) {
